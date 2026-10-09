@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Iowan Subscribe</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+body{margin:0;background:#f7f3ea;color:#1c2b2e;font-family:'Source Sans 3',sans-serif}
+a{color:#2f5d62}a:hover{color:#1c3b3f}
+</style>
+</helmet>
+<div style="display: flex; flex-direction: column; min-height: 1500px">
+
+<header style="background: #fff; border-bottom: 1px solid #ddd5c3">
+<div style="max-width: 1180px; margin: 0 auto; padding: 18px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="font-family: 'Libre Caslon Text', serif; font-size: 34px; letter-spacing: 0.04em; color: #2f5d62; text-decoration: none; font-weight: 400">THE IOWAN</a>
+<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; font-size: 16px; font-weight: 600">
+<a href="#plans" style="color: #1c2b2e; text-decoration: none">Subscribe</a>
+<a href="#shop" style="color: #1c2b2e; text-decoration: none">Shop</a>
+<a href="#help" style="color: #1c2b2e; text-decoration: none">My subscription</a>
+<a href="#plans" style="background: #2f5d62; color: #fff; text-decoration: none; padding: 12px 22px; min-height: 20px">Subscribe now</a>
+</nav>
+</div>
+</header>
+
+<main id="top" style="max-width: 1180px; width: 100%; margin: 0 auto; padding: 56px 32px 72px; box-sizing: border-box; display: flex; flex-direction: column; gap: 64px">
+
+<section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a4a12; font-weight: 700">Subscribe</div>
+<h1 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 52px; line-height: 1.08; font-weight: 700">Iowa's best people, places, photography and stories</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #3b4d50; max-width: 520px">The Iowan is your gateway to travel destinations, history and adventure, food and events. Pick a plan below, for yourself or as a gift.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#plans" style="background: #2f5d62; color: #fff; text-decoration: none; padding: 14px 26px; font-weight: 700; font-size: 17px">See plans</a>
+<a href="#help" style="border: 2px solid #2f5d62; color: #2f5d62; text-decoration: none; padding: 12px 24px; font-weight: 700; font-size: 17px">Renew or manage</a>
+</div>
+</div>
+<div style="flex: 1 1 380px; display: flex; gap: 20px; justify-content: center; align-items: flex-start">
+<img src="/_blob/17679ba3c96425ee6405614e85fc4b34" alt="The Iowan cover: a bookworm's guide to Iowa bookstores" style="width: 46%; max-width: 250px; height: auto; box-shadow: 0 10px 28px rgba(28,43,46,0.28)">
+<img src="/_blob/23aa796189fc834be085add3b0e19832" alt="The Iowan cover: Iowa balloon pilot lives his dream" style="width: 46%; max-width: 250px; height: auto; margin-top: 40px; box-shadow: 0 10px 28px rgba(28,43,46,0.28)">
+</div>
+</section>
+
+<section id="plans" style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 34px">Choose your plan</h2>
+<div role="group" aria-label="Who is this for" style="display: flex; border: 2px solid #2f5d62">
+<button type="button" onClick="{{ pickSelf }}" aria-pressed="{{ isSelf }}" style="{{ selfStyle }}">For me</button>
+<button type="button" onClick="{{ pickGift }}" aria-pressed="{{ isGift }}" style="{{ giftStyle }}">As a gift</button>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div style="background: #fff; border: 1px solid #ddd5c3; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-size: 20px">1-year subscription</h3>
+<div style="font-family: 'Libre Caslon Text', serif; font-size: 44px; font-weight: 700">$24.00</div>
+<p style="margin: 0; line-height: 1.5; color: #3b4d50">[ISSUES PER YEAR] issues, delivered to your door.</p>
+<a href="#checkout" style="margin-top: auto; background: #2f5d62; color: #fff; text-decoration: none; padding: 14px 20px; font-weight: 700; text-align: center">Choose 1 year</a>
+</div>
+<div style="background: #fff; border: 1px solid #ddd5c3; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; font-size: 20px">2-year subscription</h3>
+<div style="font-family: 'Libre Caslon Text', serif; font-size: 44px; font-weight: 700">$38.00</div>
+<p style="margin: 0; line-height: 1.5; color: #3b4d50">[YOU SAVE AMOUNT] versus two 1-year terms.</p>
+<a href="#checkout" style="margin-top: auto; background: #2f5d62; color: #fff; text-decoration: none; padding: 14px 20px; font-weight: 700; text-align: center">Choose 2 years</a>
+</div>
+<div style="background: #fff; border: 3px solid #2f5d62; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #8a4a12; font-weight: 700">Subscription + tee</div>
+<h3 style="margin: 0; font-size: 20px">1 year + "I am Iowan" tee</h3>
+<div style="font-family: 'Libre Caslon Text', serif; font-size: 44px; font-weight: 700">$53.00</div>
+<img src="/_blob/c4734dbd1a0bf1c0bfdfed41f9af32c9" alt="A recent cover with the I am Iowan t-shirt" style="width: 100%; max-height: 220px; object-fit: contain">
+<a href="#checkout" style="background: #2f5d62; color: #fff; text-decoration: none; padding: 14px 20px; font-weight: 700; text-align: center">Choose the bundle</a>
+</div>
+</div>
+</section>
+
+<section id="checkout" style="background: #fff; border: 1px solid #ddd5c3; padding: 32px; display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 28px">Your details</h2>
+<sc-if value="{{ isGift }}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="recipient" style="font-weight: 600">Gift recipient name and address</label>
+<textarea id="recipient" rows="3" style="font: inherit; padding: 12px; border: 1px solid #8a9a9c; resize: vertical"></textarea>
+</div>
+</sc-if>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="intl" style="font-weight: 600">Mailing outside the U.S.?</label>
+<select id="intl" style="font: inherit; padding: 12px; border: 1px solid #8a9a9c; background: #fff">
+<option>No</option>
+<option>Yes, add [INTERNATIONAL RATE]</option>
+</select>
+</div>
+</div>
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 12px; justify-content: flex-end">
+<div style="display: flex; justify-content: space-between; font-size: 18px"><span>Subtotal</span><strong>$24.00</strong></div>
+<a href="#top" style="background: #2f5d62; color: #fff; text-decoration: none; padding: 16px 20px; font-weight: 700; text-align: center; font-size: 18px">Continue to payment</a>
+</div>
+</section>
+
+<section id="shop" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<img src="/_blob/fe7c21cb56c6be10c7635fbc3c042add" alt="Heathered navy I am Iowan t-shirt with a word-filled map of Iowa" style="flex: 0 1 320px; width: 100%; max-width: 320px; height: auto">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 34px">The "I am Iowan" tee</h2>
+<p style="margin: 0; line-height: 1.55; color: #3b4d50; max-width: 520px">District® Very Important Tee® (DT6000). 60/40 combed ring-spun cotton/poly, slightly slimmer body, tear-away label, shoulder-to-shoulder taping. One-color white full-front screenprint. Sizes XS to 6XL.</p>
+<div style="font-family: 'Libre Caslon Text', serif; font-size: 36px; font-weight: 700">$30.00</div>
+<div role="group" aria-label="Size" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{ sizes }}" as="sz" hint-placeholder-count="10">
+<button type="button" onClick="{{ sz.pick }}" aria-pressed="{{ sz.on }}" style="{{ sz.style }}">{{ sz.label }}</button>
+</sc-for>
+</div>
+<a href="#checkout" style="align-self: flex-start; background: #2f5d62; color: #fff; text-decoration: none; padding: 14px 26px; font-weight: 700">Add tee to order</a>
+</div>
+</section>
+
+<section id="help" style="border-top: 3px double #1c2b2e; padding-top: 28px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
+<div style="max-width: 620px">
+<h2 style="margin: 0 0 8px; font-family: 'Libre Caslon Text', serif; font-size: 26px">Already a subscriber?</h2>
+<p style="margin: 0; line-height: 1.55; color: #3b4d50">Renew, change an address or check your account. [ACCOUNT PORTAL TO BE CONFIRMED WITH THE MAGAZINE]</p>
+</div>
+<a href="#top" style="border: 2px solid #2f5d62; color: #2f5d62; text-decoration: none; padding: 12px 24px; font-weight: 700">Manage my subscription</a>
+</section>
+</main>
+
+<footer style="background: #1c2b2e; color: #e9e4d6">
+<div style="max-width: 1180px; margin: 0 auto; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 18px">
+<div style="background: #fff; padding: 8px 12px"><img src="/_blob/1a9d46f5d13acdb4dc9f047e69cd400e" alt="Heuss Printing" style="display: block; width: 110px; height: auto"></div>
+<div style="line-height: 1.5; font-size: 15px">Printed by Heuss Printing<br><a href="#top" style="color: #f2c28c">Request a print quote</a></div>
+</div>
+<div style="line-height: 1.5; font-size: 15px">903 North Second Street, Ames, IA 50010<br>(515) 232-6710 · Fax 515-232-8781</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { gift: false, size: 'L' };
+}
+renderVals() {
+const on = 'font: inherit; font-weight: 700; padding: 12px 22px; min-height: 44px; border: 0; cursor: pointer; background: #2f5d62; color: #fff';
+const off = 'font: inherit; font-weight: 700; padding: 12px 22px; min-height: 44px; border: 0; cursor: pointer; background: #fff; color: #2f5d62';
+const gift = this.state.gift;
+const labels = ['XS','S','M','L','XL','2XL','3XL','4XL','5XL','6XL'];
+const pill = 'font: inherit; font-weight: 600; min-width: 48px; min-height: 44px; padding: 0 12px; cursor: pointer; border: 2px solid #2f5d62; ';
+return {
+isGift: gift,
+isSelf: !gift,
+selfStyle: gift ? off : on,
+giftStyle: gift ? on : off,
+pickSelf: () => this.setState({ gift: false }),
+pickGift: () => this.setState({ gift: true }),
+sizes: labels.map((l) => ({
+label: l,
+on: this.state.size === l,
+style: pill + (this.state.size === l ? 'background: #2f5d62; color: #fff' : 'background: #fff; color: #2f5d62'),
+pick: () => this.setState({ size: l })
+}))
+};
+}
+}
+</script>
+</body>
+</html>

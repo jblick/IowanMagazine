@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Iowan Discovery Brief</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+body{margin:0;background:#f6f1e7;color:#1f2a1c;font-family:'Source Sans 3',sans-serif}
+a{color:#7a2e1d}a:hover{color:#4d1c11}
+</style>
+</helmet>
+<div style="max-width: 1180px; margin: 0 auto; padding: 56px 32px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+
+<div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 3px double #1f2a1c; padding-bottom: 28px">
+<div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #7a2e1d; font-weight: 700">Discovery brief · Phase 1 of 3</div>
+<h1 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 56px; line-height: 1.05">The Iowan: a new home on the web</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 760px; color: #3c4838">Proposed structure and design direction for a magazine site that sells subscriptions and back issues, sells ads, takes submissions and promotes Heuss Printing. Nothing here is final. Your answers to the interview questions decide what gets built.</p>
+</div>
+
+<section style="display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 32px">The base site today</h2>
+<p style="margin: 0; line-height: 1.5; max-width: 820px; color: #3c4838">Crawled from heuss.presencehost.net/customerdesigns/the-iowan-magazine.html (the portal address you gave returns a 404; the Iowan page sits under Customer Designs). It is a single catalog page on Heuss Printing's PrinterPresence site: a short intro, then six products, then Heuss's generic printing footer. I read the page markup, not a rendered screenshot, so visual critiques are still to come.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">What it sells</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>1 year, $24 (or as a gift)</li>
+<li>2 years, $38 (or as a gift)</li>
+<li>1 year + "I am Iowan" tee, $53</li>
+<li>"I am Iowan" tee alone, $30 (XS to 6XL)</li>
+</ul></div>
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">What gets in the way</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Gift is a separate product, not a choice on one</li>
+<li>Item numbers run 01, 03, 02, 04 on the detail pages</li>
+<li>"Mailing internationally?" has no price or note</li>
+<li>Subtotal reads N/A until a choice is made</li>
+<li>Six products in one flat list, no best-value cue</li>
+</ul></div>
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">What is missing</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Any magazine content, covers or photography</li>
+<li>Issues per year, delivery timing, renewal terms</li>
+<li>Back issues, advertising, submissions, events</li>
+<li>A way for existing readers to manage a subscription</li>
+<li>Magazine branding: the footer and nav are Heuss's</li>
+</ul></div>
+</div>
+<p style="margin: 0; line-height: 1.5; max-width: 820px; color: #3c4838">A first pass at fixing the buying page is on the next artboard, using only the real products and prices above. Anything the page does not state is a bracketed placeholder.</p>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 32px">Proposed site map</h2>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">Read</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Home (current issue, featured stories)</li>
+<li>Stories by section and county</li>
+<li>Current issue, table of contents</li>
+<li>Events calendar</li>
+<li>Newsletter sign-up</li>
+</ul></div>
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">Subscribe and shop</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Subscribe, renew, give a gift</li>
+<li>My account (address, renewal, billing)</li>
+<li>Back-issue store</li>
+<li>Issue archive</li>
+<li>Cart and checkout</li>
+</ul></div>
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">Advertise</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Why advertise (audience, reach)</li>
+<li>Media kit and rates</li>
+<li>Editorial calendar</li>
+<li>Advertiser showcase and directory</li>
+<li>Inquiry form</li>
+</ul></div>
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">Contribute</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Writer and photographer guidelines</li>
+<li>Submit an article</li>
+<li>Submit an event</li>
+</ul></div>
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">Heuss Printing</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Services overview</li>
+<li>Printed with Heuss (portfolio)</li>
+<li>Request a quote</li>
+</ul></div>
+<div style="background: #fff; border: 1px solid #d8cfba; padding: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px">About</h3>
+<ul style="margin: 0; padding-left: 18px; line-height: 1.7">
+<li>Our story and staff</li>
+<li>Contact and FAQ</li>
+<li>Press and privacy</li>
+</ul></div>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 32px">Homepage wireframe, top to bottom</h2>
+<ol style="margin: 0; padding-left: 22px; line-height: 1.8; font-size: 17px; max-width: 820px">
+<li><strong>Masthead and utility bar:</strong> logo, primary nav, Subscribe button always visible, account link, search.</li>
+<li><strong>Cover story hero:</strong> one large Iowa photograph, headline, deck, and the current cover with a Subscribe call to action beside it.</li>
+<li><strong>Latest stories:</strong> a magazine-style grid with one lead story and four smaller ones.</li>
+<li><strong>Subscribe band:</strong> price, term and a gift option, with a visible "manage my subscription" link for existing readers.</li>
+<li><strong>Events near you:</strong> the next four calendar items.</li>
+<li><strong>Back issues:</strong> a row of covers with prices and quick add.</li>
+<li><strong>Our advertisers:</strong> a respectful sponsor strip with a link to the full directory.</li>
+<li><strong>Newsletter and submissions:</strong> two side-by-side prompts.</li>
+<li><strong>Footer:</strong> "Printed by Heuss Printing" with a quote link, contact details and social links.</li>
+</ol>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 32px">Ideas beyond your list</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; line-height: 1.5">
+<div><strong>Digital edition and archive search.</strong> Flip-through of each issue, with paywalled full-text search.</div>
+<div><strong>Gift subscriptions.</strong> A seasonal landing page with a card sent by email.</div>
+<div><strong>Newsletter.</strong> A weekly email that feeds the site and gives advertisers another slot.</div>
+<div><strong>Advertiser profile pages.</strong> Sold as a package: print ad plus listing, with tracked clicks.</div>
+<div><strong>Map of Iowa.</strong> Stories and events pinned by county or town.</div>
+<div><strong>Photo contest.</strong> Annual reader submissions that become content and a print feature.</div>
+<div><strong>Group and school rates.</strong> Bulk subscriptions for libraries and classrooms.</div>
+<div><strong>Accessibility and speed.</strong> WCAG AA, mobile-first, fast pages for rural connections.</div>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 16px; background: #1f2a1c; color: #f6f1e7; padding: 32px">
+<h2 style="margin: 0; font-family: 'Libre Caslon Text', serif; font-size: 28px">Design direction</h2>
+<p style="margin: 0; line-height: 1.6; max-width: 820px">Taken from the magazine's own covers: a tall, high-contrast serif in capitals for the masthead (set here in a close Google Fonts match, since the site has no standalone logo file), deep teal as the main color with a warm gold accent, cream pages, and large cover and landscape photography. Body text in a clean sans. Heuss Printing appears as a "Printed by" credit with its real logo (orange and blue) in the footer. Subscribe and account actions stay one click away on every page. If The Iowan has a master logo file or brand guide, I will swap it in.</p>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2100}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
