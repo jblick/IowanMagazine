@@ -1,0 +1,133 @@
+{
+  "brand": "ClaudeKit Marketing - Primary",
+  "primitive": {
+    "color": {
+      "primary": {
+        "50": {
+          "$value": "#DCE7E5",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "#DCE7E5",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#ACBEC0",
+          "$type": "color"
+        },
+        "300": {
+          "$value": "#829EA1",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#597D81",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#2F5D62",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#1C3B3F",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#214145",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#1A3336",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#132527",
+          "$type": "color"
+        }
+      },
+      "secondary": {
+        "50": {
+          "$value": "#F3EDE7",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "#E8DBD0",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#D0B7A0",
+          "$type": "color"
+        },
+        "300": {
+          "$value": "#B99271",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#A16E41",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#8A4A12",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#753F0F",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#61340D",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#4C290A",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#371E07",
+          "$type": "color"
+        }
+      },
+      "accent": {
+        "50": {
+          "$value": "#FEF9F4",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "#FCF3E8",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#FAE7D1",
+          "$type": "color"
+        },
+        "300": {
+          "$value": "#F7DABA",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#F5CEA3",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#F2C28C",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#CEA577",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#A98862",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#856B4D",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#614E38",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

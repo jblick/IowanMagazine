@@ -1,0 +1,80 @@
+<!-- title: Events | nav: events | description: Festivals, fairs, rides and gatherings across Iowa, by region and month. -->
+<section class="page-intro">
+  <div class="wrap">
+    <p class="kicker">Events calendar</p>
+    <h1>What's happening across Iowa</h1>
+    <p class="deck measure">Festivals, fairs, rides and gatherings worth the drive. Know of one we're missing? <a href="contribute.html#event">Submit an event</a>.</p>
+    <p class="placeholder-note measure">Sample listings: these are long-running Iowa events. Exact dates are confirmed with organizers before publishing.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 48px" aria-label="Event list">
+  <div class="wrap">
+    <div class="chip-row" role="group" aria-label="Filter by region" data-filter-group="region" data-target="event-list" data-empty="event-empty" data-status="event-count">
+      <button class="chip" type="button" data-value="all" aria-pressed="true">All of Iowa</button>
+      <button class="chip" type="button" data-value="northwest" aria-pressed="false">Northwest</button>
+      <button class="chip" type="button" data-value="northeast" aria-pressed="false">Northeast</button>
+      <button class="chip" type="button" data-value="central" aria-pressed="false">Central</button>
+      <button class="chip" type="button" data-value="southwest" aria-pressed="false">Southwest</button>
+      <button class="chip" type="button" data-value="east" aria-pressed="false">East</button>
+      <button class="chip" type="button" data-value="statewide" aria-pressed="false">Statewide</button>
+    </div>
+    <p class="meta" role="status" id="event-count" style="margin-bottom: 24px">10 results</p>
+
+    <ul class="event-list" id="event-list">
+      <li class="event" data-region="central">
+        <p class="when"><span class="month">October</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">Covered Bridges Festival</a></h3><p class="where">{{icon:pin}} Winterset, Madison County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="central">
+        <p class="when"><span class="month">May</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">Tulip Time</a></h3><p class="where">{{icon:pin}} Pella, Marion County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="southwest">
+        <p class="when"><span class="month">May</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">Tivoli Fest</a></h3><p class="where">{{icon:pin}} Elk Horn, Shelby County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="statewide">
+        <p class="when"><span class="month">July</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">RAGBRAI</a></h3><p class="where">{{icon:pin}} Across Iowa, west to east</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="northeast">
+        <p class="when"><span class="month">July</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">Nordic Fest</a></h3><p class="where">{{icon:pin}} Decorah, Winneshiek County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="east">
+        <p class="when"><span class="month">July</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">Bix 7 road race</a></h3><p class="where">{{icon:pin}} Davenport, Scott County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="central">
+        <p class="when"><span class="month">July&ndash;Aug</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">National Balloon Classic</a></h3><p class="where">{{icon:pin}} Indianola, Warren County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="central">
+        <p class="when"><span class="month">August</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">Iowa State Fair</a></h3><p class="where">{{icon:pin}} Des Moines, Polk County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="northwest">
+        <p class="when"><span class="month">September</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">Clay County Fair</a></h3><p class="where">{{icon:pin}} Spencer, Clay County</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+      <li class="event" data-region="northwest">
+        <p class="when"><span class="month">[MONTH]</span><span class="day">[DATES]</span></p>
+        <div><h3><a href="#">[EVENT NAME]</a></h3><p class="where">{{icon:pin}} [TOWN], [COUNTY]</p></div>
+        <a class="btn btn-secondary btn-small" href="#">Details</a>
+      </li>
+    </ul>
+    <div class="empty-state mt-xl" id="event-empty" hidden>
+      <p>No events listed for this region yet. <a href="contribute.html#event">Tell us about one</a>.</p>
+    </div>
+  </div>
+</section>
